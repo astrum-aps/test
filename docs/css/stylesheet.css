@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(colors/color.css);
 /* CSS Document */
 
 :root {
@@ -37,22 +38,73 @@ header > img {
   height: 100px;
 }
 
-nav{
-display: block;
-background-color: var(--secondary_color);
-margin: auto;
-width: 100%;
-height: 30px;
+/* Navegation_Horizontal */
+.contenedor_menu_horizontal{
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  display: block;
+  overflow: visible;
+  width: 100%;
+  background: var(--secondary_color);
+  text-align: center;
 }
 
-nav,
-nav a,
-nav a:visited{
-color: #fff;
-text-decoration: none;
+/*elemento nav*/
+.box-nav {
+  display: block;
+  margin: auto;
+  min-width: 730px;
+  max-width:1200px;
+  width: 95%;
+  font-size: 12px;
 }
 
-li{
-  position: relative;
-  float: left;
+/*elemento ul*/
+.lista-ul-nav {
+  display: table;
+  width: 100%;
 }
+
+/*elemento li*/
+.item-li-nav {
+  display: table-cell;
+  padding: 0 2px;
+  text-align: center;
+  white-space: nowrap;
+}
+.item-li-nav a {
+  display: block;
+  padding: 15px;
+  background-color: #2a2a2a;
+  border-bottom: 2px solid #555555;
+  color: #fff;
+  text-decoration: none;
+}
+.item-li-nav a:hover {
+  border-bottom: 2px solid #fff;
+  background: #999;
+  }
+.item-li-nav:hover .sublista-nav {
+  display: block;
+  }
+
+/*elemento ul2*/
+.sublista-nav {
+  position: absolute;
+  z-index: 1003;
+  display: none;
+  overflow: hidden;
+  min-width: 110px;
+  max-width: 185px;
+  width: 15.55%;
+}
+
+/*elemento li2*/
+.subitem {
+  display: block;
+  overflow: hidden;
+  margin: 3px 3px 0 0;
+}
+/* fine menu di navegazione */
