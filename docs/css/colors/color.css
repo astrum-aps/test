@@ -2,11 +2,24 @@
   --global_color: #003e78;
   --secondary_color: #194884;
 
+  /* #003e78 to white */
+  --to_white1:#003e78;
+  --to_white2:#3f5a8e;
+  --to_white3:#6778a4;
+  --to_white4:#8d98ba;
+  --to_white5:#b2b9d1;
+  --to_white6:#d8dce8;
+  --to_white7:#ffffff;
+
+  /* #003e78 to black */
+  --to_black:#003e78;
+  --to_black:#0c3463;
+  --to_black:#112b4f;
+  --to_black:#12223c;
+  --to_black:#11192a;
+  --to_black:#0c0f19;
+  --to_black:#000000;
 
 
-
-
-
-  
 }
 
